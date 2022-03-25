@@ -1,0 +1,16 @@
+#
+# Edit Lock-Stake file. CAUTION: Please do not change.
+#
+# Information about current Edit Lock Owner.
+#
+LockStakeVersion               1.1
+LoginName                      rohitbarichello
+HostName                       n01-zeus.olympus.ece.tamu.edu
+ProcessIdentifier              28003
+ProcessCreationTime_UTC        1648225764
+ProcessCreationTime_Readable   Fri Mar 25 11:29:24 2022 CDT
+AppIdentifier                  /opt/coe/cadence/IC618/tools/dfII/bin/64bit/libManager
+OSType                         lnx86
+ReasonForPlacingEditLock       log file
+FilePathUsedToEditLock         /home/ugrads/r/rohitbarichello/ECEN454/libManager.log
+TimeEditLocked                 Fri Mar 25 11:29:25 2022 CDT
