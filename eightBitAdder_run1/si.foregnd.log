@@ -1,79 +1,6 @@
-si: simSetDef().... simHostDiffers is initialized to "nil".
-si: simSetDef().... simPostAnalysisProcessingFunc is already set to
-vlogifPostBatchJobMessage. Redefinition to nil is ignored.
-si: simSetDef().... simNotifyKillActionFunc is initialized to "nil".
-si: simSetDef().... simDoNotDisplayDialogBox is already set to t. Redefinition
-to nil is ignored.
-si: simSetDef().... simUserDefineDefaultRunDirFunc is initialized to "nil".
-si: simSetDef().... simCommand is already set to prog((status) if((simHost ==
-"localhost") (status = vlogifRunLocalBatch()) (status = vlogifRunRemoteBatch()))
-return(status)). Redefinition to "" is ignored.
-si: simSetDef().... simSedFile is already set to
-"/opt/coe/cadence/IC618/tools.lnx86/dfII/etc/si/sed.ver". Redefinition to "" is
-ignored.
-si: simSetDef().... simDefaultSimulator is already set to "spice". Redefinition
-to nil is ignored.
-si: simSetDef().... simDefaultRunDir is already set to
-"/home/ugrads/r/rohitbarichello/ECEN454/fulladder_run1". Redefinition to nil is
-ignored.
-si: simSetDef().... simOtherInfo is initialized to "nil".
-si: simSetDef().... simIsFlattenP is initialized to "nil".
-si: simSetDef().... simNoSimdiff is initialized to "nil".
-si: simSetDef().... simDefaultControl is already set to "control.ver".
-Redefinition to nil is ignored.
-si: simSetDef().... simControlFile is already set to
-"/opt/coe/cadence/IC618/tools.lnx86/dfII/etc/si/control.ver". Redefinition to
-nil is ignored.
-si: simSetDef().... simNetlistHier is already set to t. Redefinition to nil is
-ignored.
-si: simSetDef().... simGlobalPrefix is already set to "cds_globals.".
-Redefinition to nil is ignored.
-si: simSetDef().... simHierarchyPrefix is already set to "test.top".
-Redefinition to nil is ignored.
-si: simSetDef().... simNoLeadingHierarchyDelim is initialized to "nil".
-si: simSetDef().... simPrefixHierarchyWithCV is initialized to "nil".
-si: simSetDef().... simNetNamePrefix is already set to "cdsNet". Redefinition to
-nil is ignored.
-si: simSetDef().... simInstNamePrefix is already set to "Inst_". Redefinition to
-nil is ignored.
-si: simSetDef().... simModelNamePrefix is already set to "hdl_". Redefinition to
-nil is ignored.
-si: simSetDef().... simTermNamePrefix is already set to "cdsTerm". Redefinition
-to nil is ignored.
-si: simSetDef().... simCheckTermMismatchAction is already set to "ignore".
-Redefinition to "error" is ignored.
-si: simSetDef().... simCleanFileList is initialized to "nil".
-si: simSetDef().... simSimulatorSaveVars is already set to
-(simVerilogLaiLmsiNetlisting verilogSimViewList simVerilogAutoNetlisting
-simVerilogTestFixtureFlag simVerilogTestFixtureTemplate
-simVerilogNetlistExplicit hnlVerilogTermSyncUp simVerilogFlattenBuses
-vtoolsUseUpperCaseFlag hnlVerilogCreatePM simVerilogTopLevelModuleName
-simHierarchyPrefix simNCVerilogHierPrefix verilogSimStopList
-simVerilogPwrNetList simVerilogGndNetList vtoolsifForceReNetlisting
-simVerilogLibNames vlogifInternalTestFixtureFlag simVerilogBusJustificationStr
-simVerilogTestFixtureTemplate simVerilogDropPortRange simVerilogHandleUseLib
-simVerilogHandleAliasPort simVerilogPrintStimulusNameMappingTable
-simVerilogProcessNullPorts simVerilogIncrementalNetlistConfigList
-hnlVerilogNetlistStopCellImplicit simVerilogOverWriteSchTimeScale
-vlogifCompatibilityMode simVerilogHandleSwitchRCData vlogifUseAssignsForAlias
-vlogifDeclareGlobalNetLocal vlogifSkipTimingInfo
-simVerilogEnableEscapeNameMapping simVerilogStopAfterCompilation
-simVerilogVhdlImport simVerilogTopCellCounter hnlSupportIterInst). Redefinition
-to nil is ignored.
-si: simSetDef().... simApplicationOptionsForm is initialized to "nil".
-si: simSetDef().... simSimulatorSaveFiles is initialized to "nil".
-si: simSetDef().... simDontCopyFileNetlistToRemoteRunDir is already set to t.
-Redefinition to nil is ignored.
-si: simSetDef().... simRsh is initialized to "nil".
-si: simSetDef().... simNotIncremental is initialized to "nil".
-si: simSetDef().... simReNetlistAll is initialized to "nil".
-si: simSetDef().... simDoNotForkNetlist is initialized to "nil".
-si: simSetDef().... interactiveTAP is initialized to "nil".
-si: simSetDef().... simPrintSilosCap is initialized to "nil".
-si: simSetDef().... simDoPostLayout is initialized to "nil".
 
 Running netlist
-Begin Incremental Netlisting Mar 25 14:57:40 2022
+Begin Incremental Netlisting Mar 25 15:17:12 2022
 si: simSetDef().... hnlCapability is initialized to "nil".
 si: simSetDef().... hnlBusCapability is initialized to "nil".
 INFO (VLOGNET-188): While generating implicit netlist, it is recommended to set
@@ -123,13 +50,6 @@ either in CIW or the .simrc file.
  
 INFO (VLOGNET-120): Using connection by order (implicit connections) for all the
 stopping cells.
-
-INFO (VLOGNET-169): Module port ordering for lib 'NCSU_Digital_Parts', cell
-'DFF', view 'schematic' will be
- done using the user specified port order as
-follows:
-
- => ("Q" "D" "Clk" "_Clk")
 
 INFO (VLOGNET-169): Module port ordering for lib 'NCSU_Digital_Parts', cell
 'nand2', view 'functional' will be
@@ -165,19 +85,15 @@ Dlatch                      behavioral           *Stopping View*
 xor2                        functional           *Stopping View*  
 nand2                       functional           *Stopping View*  
 eightBitAdder               schematic                             
-fourBitAdder                schematic                             
-fulladder                   schematic                             
-fourBitRegister             schematic                             
-DFF                         schematic                             
 
 ---------- End of netlist configuration information   ----------
 INFO (VLOGNET-80): The library 'Design', cell 'eightBitAdder', and view
 'schematic' has been netlisted successfully.
 
-End netlisting Mar 25 14:57:40 2022
+End netlisting Mar 25 15:17:12 2022
 
 Running netlist
-Begin Incremental Netlisting Mar 25 15:03:49 2022
+Begin Incremental Netlisting Mar 25 15:20:12 2022
 si: simSetDef().... hnlCapability is initialized to "nil".
 si: simSetDef().... hnlBusCapability is initialized to "nil".
 INFO (VLOGNET-188): While generating implicit netlist, it is recommended to set
@@ -266,4 +182,4 @@ nand2                       functional           *Stopping View*
 INFO (VLOGNET-80): The library 'Design', cell 'eightBitAdder', and view
 'schematic' has been netlisted successfully.
 
-End netlisting Mar 25 15:03:50 2022
+End netlisting Mar 25 15:20:13 2022

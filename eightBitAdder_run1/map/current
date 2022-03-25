@@ -15,12 +15,12 @@
   rightStr  "]"
  )
 ( defbus
-( "S" 7 0  "S" 7 0  )
+( "net18" 0 3  "net18" 0 3  )
 ( "Y" 7 0  "Y" 7 0  )
+( "X" 7 0  "X" 7 0  )
+( "S" 7 0  "S" 7 0  )
 ( "net19" 0 3  "net19" 0 3  )
 ( "net17" 0 3  "net17" 0 3  )
-( "X" 7 0  "X" 7 0  )
-( "net18" 0 3  "net18" 0 3  )
  )
 ( model
 ( "Design/fourBitAdder/schematic" "fourBitAdder" )

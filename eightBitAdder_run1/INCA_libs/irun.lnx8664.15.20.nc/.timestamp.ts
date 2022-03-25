@@ -1,7 +1,7 @@
-1648238260 /home/ugrads/r/rohitbarichello/ECEN454/eightBitAdder_run1/ihnl/cds4/netlist
+1648239432 /home/ugrads/r/rohitbarichello/ECEN454/eightBitAdder_run1/ihnl/cds4/netlist
 1648238260 /home/ugrads/r/rohitbarichello/ECEN454/eightBitAdder_run1/ihnl/cds2/netlist
 1648238260 /home/ugrads/r/rohitbarichello/ECEN454/eightBitAdder_run1/ihnl/cds0/netlist
-1648238260 /home/ugrads/r/rohitbarichello/ECEN454/eightBitAdder_run1/testfixture.template
+1648239432 /home/ugrads/r/rohitbarichello/ECEN454/eightBitAdder_run1/testfixture.template
 1139589194 /opt/coe/ncsu/ncsu-cdk-1.6.0.beta/lib/NCSU_Digital_Parts/Dlatch/behavioral/verilog.v
 1139589200 /opt/coe/ncsu/ncsu-cdk-1.6.0.beta/lib/NCSU_Digital_Parts/xor2/functional/verilog.v
 1648238260 /home/ugrads/r/rohitbarichello/ECEN454/eightBitAdder_run1/ihnl/cds3/netlist

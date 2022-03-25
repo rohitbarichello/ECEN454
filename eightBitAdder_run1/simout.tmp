@@ -1,4 +1,4 @@
-TOOL:	ncxlmode	15.20-s078: Started on Mar 25, 2022 at 14:57:52 CDT
+TOOL:	ncxlmode	15.20-s078: Started on Mar 25, 2022 at 15:17:24 CDT
 ncxlmode
 	+delay_mode_path
 	+typdelays
@@ -39,9 +39,6 @@ ncxlmode: *W,DLCVAR (/home/ugrads/r/rohitbarichello/cds.lib,1): cds.lib Invalid 
 SOFTINCLUDE $SYSTEM_CDS_LIB_DIR/cds.lib
 |
 ncxlmode: *W,DLCVAR (/home/ugrads/r/rohitbarichello/cds.lib,1): cds.lib Invalid environment variable ''.
-SOFTINCLUDE $SYSTEM_CDS_LIB_DIR/cds.lib
-|
-ncxlmode: *W,DLCVAR (/home/ugrads/r/rohitbarichello/cds.lib,1): cds.lib Invalid environment variable ''.
 
 -------------------------------------
 Relinquished control to SimVision...
@@ -51,6 +48,9 @@ ncsim> database -open shmWave -shm -default -into shm.db
 Created default SHM database shmWave
 ncsim> probe -create -shm test  -all   -depth 1
 Created probe 1
+ncsim> run
+ncsim> run
+ncsim> run
 ncsim> ^C
 ncsim> exit
-TOOL:	ncxlmode	15.20-s078: Exiting on Mar 25, 2022 at 15:01:53 CDT  (total: 00:04:01)
+TOOL:	ncxlmode	15.20-s078: Exiting on Mar 25, 2022 at 15:19:50 CDT  (total: 00:02:26)

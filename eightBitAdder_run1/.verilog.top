@@ -15,11 +15,11 @@ reg [7:0]  Y;
 
 // Buses in the design
 
-wire  [0:3]  net18;
-
 wire  [0:3]  net17;
 
 wire  [0:3]  net19;
+
+wire  [0:3]  net18;
 
 
 
