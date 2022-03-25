@@ -8,11 +8,27 @@
 initial
 begin 
 
-   Cin = 1'b0;
-   Clk = 1'b0;
-   X[7:0] = 8'b00000000;
+   Cin = 1'b0; Clk = 1'b1; X[7:0] = 8'b01111110; Y[7:0] = 8'b11100111; _Clk = 1'b0;
+   $monitor ($time," X=%b, Y=%b, Cin=%b, S=%b, Cout=%b", X, Y, Cin, S, Cout);
+   #50
 
-   Y[7:0] = 8'b00000000;
+      Cin = 1'b1; Clk = 1'b1; X[7:0] = 8'b11111111; Y[7:0] = 8'b00000000; _Clk = 1'b0;
+   $monitor ($time," X=%b, Y=%b, Cin=%b, S=%b, Cout=%b", X, Y, Cin, S, Cout);
+   #50
 
-   _Clk = 1'b0;
+      Cin = 1'b0; Clk = 1'b1; X[7:0] = 8'b10101010; Y[7:0] = 8'b01010101; _Clk = 1'b0;
+   $monitor ($time," X=%b, Y=%b, Cin=%b, S=%b, Cout=%b", X, Y, Cin, S, Cout);
+   #50
+
+      Cin = 1'b1; Clk = 1'b1; X[7:0] = 8'b10101010; Y[7:0] = 8'b01010101; _Clk = 1'b0;
+   $monitor ($time," X=%b, Y=%b, Cin=%b, S=%b, Cout=%b", X, Y, Cin, S, Cout);
+   #50
+
+      Cin = 1'b0; Clk = 1'b1; X[7:0] = 8'b11001100; Y[7:0] = 8'b00110011; _Clk = 1'b0;
+   $monitor ($time," X=%b, Y=%b, Cin=%b, S=%b, Cout=%b", X, Y, Cin, S, Cout);
+   #50
+
+      Cin = 1'b1; Clk = 1'b1; X[7:0] = 8'b11001100; Y[7:0] = 8'b00110011; _Clk = 1'b0;
+   $monitor ($time," X=%b, Y=%b, Cin=%b, S=%b, Cout=%b", X, Y, Cin, S, Cout);
+
 end 
