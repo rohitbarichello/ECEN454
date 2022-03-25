@@ -13,4 +13,4 @@ AppIdentifier                  OA File System Design Manager
 OSType                         unix
 ReasonForPlacingEditLock       OpenAccess edit lock
 FilePathUsedToEditLock         /home/ugrads/r/rohitbarichello/ECEN454/Design/eightBitAdder/schematic/sch.oa.cdslck
-TimeEditLocked                 Fri Mar 25 13:33:02 2022 CDT
+TimeEditLocked                 Fri Mar 25 14:55:34 2022 CDT

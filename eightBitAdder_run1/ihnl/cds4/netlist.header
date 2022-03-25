@@ -1,0 +1,31 @@
+// Library - Design, Cell - eightBitAdder, View - schematic
+// LAST TIME SAVED: Mar 25 14:13:41 2022
+// NETLIST TIME: Mar 25 14:57:40 2022
+`timescale 1ns / 1ns 
+
+module eightBitAdder ( Cout, S, Cin, Clk, X, Y, _Clk );
+
+output  Cout;
+
+input  Cin, Clk, _Clk;
+
+output [7:0]  S;
+
+input [7:0]  X;
+input [7:0]  Y;
+
+// Buses in the design
+
+wire  [0:3]  net18;
+
+wire  [0:3]  net17;
+
+wire  [0:3]  net19;
+
+
+specify 
+    specparam CDS_LIBNAME  = "Design";
+    specparam CDS_CELLNAME = "eightBitAdder";
+    specparam CDS_VIEWNAME = "schematic";
+endspecify
+

@@ -1,0 +1,28 @@
+
+`timescale 1ns / 1ns
+
+module test;
+
+
+wire  Cout;
+
+reg  Cin, Clk, _Clk;
+
+wire [7:0]  S;
+
+reg [7:0]  X;
+reg [7:0]  Y;
+
+
+
+eightBitAdder top(Cout, S, Cin, Clk, X, Y, _Clk); 
+ 
+
+`ifdef verilog
+
+ //please enter any additional verilog stimulus in the /home/ugrads/r/rohitbarichello/ECEN454/eightBitAdder_run1/testfixture.verilog file
+`include "/home/ugrads/r/rohitbarichello/ECEN454/eightBitAdder_run1/testfixture.verilog"
+
+`endif
+
+endmodule 

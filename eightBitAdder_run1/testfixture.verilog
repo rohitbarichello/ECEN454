@@ -1,0 +1,18 @@
+
+// Verilog stimulus file.
+// Please do not create a module in this file.
+
+
+// Default verilog stimulus. 
+
+initial
+begin 
+
+   Cin = 1'b0;
+   Clk = 1'b0;
+   X[7:0] = 8'b00000000;
+
+   Y[7:0] = 8'b00000000;
+
+   _Clk = 1'b0;
+end 
