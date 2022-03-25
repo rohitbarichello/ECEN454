@@ -2,15 +2,21 @@
 // Verilog stimulus file.
 // Please do not create a module in this file.
 
-
 // Default verilog stimulus. 
 
 initial
 begin 
 
-   A[3:0] = 4'b0000;
+   A[3:0] = 4'b1111; B[3:0] = 4'b1111; Cin = 1'b0;
+   $monitor ($time," A=%b, B=%b, Cin=%b, S=%b, Cout=%b", A, B, Cin, S, Cout);
+   #50
 
-   B[3:0] = 4'b0000;
+   A[3:0] = 4'b1010; B[3:0] = 4'b1010; Cin = 1'b1;
+   $monitor ($time," A=%b, B=%b, Cin=%b, S=%b, Cout=%b", A, B, Cin, S, Cout);
+   #50
 
-   Cin = 1'b0;
+   A[3:0] = 4'b0101; B[3:0] = 4'b0101; Cin = 1'b1;
+   $monitor ($time," A=%b, B=%b, Cin=%b, S=%b, Cout=%b", A, B, Cin, S, Cout);
+   #50
+
 end 
