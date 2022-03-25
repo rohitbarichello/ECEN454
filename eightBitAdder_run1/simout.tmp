@@ -1,4 +1,4 @@
-TOOL:	ncxlmode	15.20-s078: Started on Mar 25, 2022 at 15:17:24 CDT
+TOOL:	ncxlmode	15.20-s078: Started on Mar 25, 2022 at 15:22:57 CDT
 ncxlmode
 	+delay_mode_path
 	+typdelays
@@ -49,8 +49,13 @@ Created default SHM database shmWave
 ncsim> probe -create -shm test  -all   -depth 1
 Created probe 1
 ncsim> run
-ncsim> run
+                   0 X=01111110, Y=11100111, Cin=0, S=xxxxxxxx, Cout=x
+                  50 X=11111111, Y=00000000, Cin=1, S=xxxxxxxx, Cout=x
+                 100 X=10101010, Y=01010101, Cin=0, S=00000101, Cout=1
+                 150 X=10101010, Y=01010101, Cin=1, S=00000101, Cout=1
+                 200 X=11001100, Y=00110011, Cin=0, S=00000101, Cout=1
+                 250 X=11001100, Y=00110011, Cin=1, S=00000101, Cout=1
 ncsim> run
 ncsim> ^C
 ncsim> exit
-TOOL:	ncxlmode	15.20-s078: Exiting on Mar 25, 2022 at 15:19:50 CDT  (total: 00:02:26)
+TOOL:	ncxlmode	15.20-s078: Exiting on Mar 25, 2022 at 15:26:50 CDT  (total: 00:03:53)
