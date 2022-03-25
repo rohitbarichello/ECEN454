@@ -1,0 +1,28 @@
+( ( nil
+  version "2.1"
+  mapType "incremental"
+  blockName "fourBitAdder"
+  repList "behavioral functional system verilog pld_verilog lai_verilog lmsi_verilog schematic symbol"
+  stopList "verilog pld_verilog lai_verilog lmsi_verilog symbol"
+  hierDelim "."
+  hierPrefix "test.top"
+  globalHierPrefix "cds_globals."
+  netlistDir "/home/ugrads/r/rohitbarichello/ECEN454/fourBitAdder_run1"
+  busRef   "ORDERED"
+  netType   "BUS"
+  leftStr  "["
+  rangeStr  ":"
+  rightStr  "]"
+ )
+( defbus
+( "S" 3 0  "S" 3 0  )
+( "B" 3 0  "B" 3 0  )
+( "A" 3 0  "A" 3 0  )
+ )
+( model
+( "Design/fourBitAdder/schematic" "fourBitAdder" )
+( "Design/fulladder/schematic" "fulladder" )
+ )
+( "fourBitAdder" "ihnl/cds1/map" )
+( "fulladder" "ihnl/cds0/map" )
+ )

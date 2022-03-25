@@ -1,0 +1,9 @@
+CADENCE IHNL11140
+$model
+Design/fulladder/schematic fulladder
+Design/fourBitAdder/schematic fourBitAdder
+$endmodel
+$net
+$endnet
+$param
+$endparam
