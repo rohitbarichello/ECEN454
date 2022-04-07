@@ -1,6 +1,6 @@
 \o Program:		@(#)$CDS: libManager version 6.1.8 - CAT37 06/26/2020 22:02 (sjfhw830) $
 \o Sub version:		sub-version  s131 
-\o Arguments:		-mpssession virtuoso5650 -mpshost n01-zeus.olympus.ece.tamu.edu 
+\o Arguments:		-mpssession virtuoso2266 -mpshost n01-zeus.olympus.ece.tamu.edu 
 \o Working Directory:	n01-zeus.olympus.ece.tamu.edu:/home/ugrads/r/rohitbarichello/ECEN454
 \o 64-bit offsets
 \o Qt version: 		5.9.1
@@ -13,11 +13,11 @@
 \o ddSetForcedLib("") unnecessary.
 \o MPS service: map window
 \o Library Manager customization server connected.
-\a nrSetCurrentWindow(cdsLibManager)
 \a cdsLibManager->libListBox->value = "Design"
 \a cdsLibManager->libLineEdit->value = "Design"
-\a cdsLibManager->cellListBox->value = "inverter"
-\a cdsLibManager->cellLineEdit->value = "inverter"
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->cellListBox->value = "nand2"
+\a cdsLibManager->cellLineEdit->value = "nand2"
 \a cdsLibManager->viewListBox->value = "schematic"
 \a cdsLibManager->viewLineEdit->value = "schematic"
 \o MPS request: edit design
@@ -30,8 +30,8 @@
 \a cdsLibManager->cellLineEdit->value = ""
 \a cdsLibManager->libListBox->value = "Design"
 \a cdsLibManager->libLineEdit->value = "Design"
-\a cdsLibManager->cellListBox->value = "inverter"
-\a cdsLibManager->cellLineEdit->value = "inverter"
+\a cdsLibManager->cellListBox->value = "nand2"
+\a cdsLibManager->cellLineEdit->value = "nand2"
 \a cdsLibManager->viewListBox->value = "schematic"
 \a cdsLibManager->viewLineEdit->value = "schematic"
 \a cdsLibManager->viewLineEdit->value = ""
@@ -41,4 +41,5 @@
 \a nrSetCurrentWindow(cdsLibManager)
 \a nrSetCurrentWindow(cdsLibManager)
 \a nrSetCurrentWindow(cdsLibManager)
-\a nrResizeWindow(cdsLibManager list(0 0 958 853))
+\a nrSetWindowVisibility(cdsLibManager "hide")
+\a _lmgrCloseIconify("cdsLibManager" 1)
