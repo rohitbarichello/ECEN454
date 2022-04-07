@@ -11,7 +11,7 @@ acinput (IV_in 0) vsource dc=0 mag=1
 
 R1 (IV_in IV_in1) resistor r=0
 
-X1 (nand2_in vdd nand2_out vdd gnd) NAND2 wp=700n lp=200n wn=300n ln=200n
+X1 (IV_in1 vdd nand2_out vdd gnd) NAND2 wp=700n lp=200n wn=300n ln=200n
 
 Freq ac start=1e+1 stop=1e+9
 save R1:currents
