@@ -4,69 +4,88 @@ Command line: /opt/coe/cadence/IC618/tools.lnx86/dfII/bin/64bit/LVS -dir /home/u
 Like matching is enabled.
 Net swapping is enabled.
 Using terminal names as correspondence points.
-Compiling Diva LVS rules...
 
     Net-list summary for /home/ugrads/r/rohitbarichello/ECEN454/LVS/layout/netlist
        count
-        11              nets
-        5               terminals
-        6               pmos
-        6               nmos
+        25              nets
+        7               terminals
+        18              pmos
+        18              nmos
 
     Net-list summary for /home/ugrads/r/rohitbarichello/ECEN454/LVS/schematic/netlist
        count
-        11              nets
-        5               terminals
-        6               pmos
-        6               nmos
+        25              nets
+        7               terminals
+        18              pmos
+        18              nmos
 
 
     Terminal correspondence points
-    N9        N0        A
-    N8        N1        B
-    N7        N2        GND
-    N10       N4        VDD
-    N6        N10       Y
+    N1        N1        A
+    N2        N2        B
+    N3        N3        Cin
+    N4        N4        Cout
+    N5        N5        GND
+    N0        N0        S
+    N6        N6        VDD
 
 Devices in the netlist but not in the rules:
-        pcapacitor
-Devices in the rules but not in the netlist:
-        cap nfet pfet nmos4 pmos4
+        pcapacitor pmos nmos
 
-The net-lists match.
+
+        Device summary for layout
+                   bad  total
+            nmos     1     18
+
+
+        Device summary for schematic
+                   bad  total
+            nmos     1     18
+
+The net-lists failed to match.
 
                              layout  schematic
                                 instances
-        un-matched              0       0      
-        rewired                 0       0      
+        un-matched              1       1      
+        rewired                 5       0      
         size errors             0       0      
         pruned                  0       0      
-        active                  12      12     
-        total                   12      12     
+        active                  36      36     
+        total                   36      36     
 
                                   nets
-        un-matched              0       0      
+        un-matched              2       2      
         merged                  0       0      
         pruned                  0       0      
-        active                  11      11     
-        total                   11      11     
+        active                  25      25     
+        total                   25      25     
 
                                 terminals
-        un-matched              0       0      
+        un-matched              2       2      
         matched but
         different type          0       0      
-        total                   5       5      
+        total                   7       7      
 
 
 Probe files from /home/ugrads/r/rohitbarichello/ECEN454/LVS/schematic
 
 devbad.out:
+I /I1/N1
+? Device does not cross-match.
 
 netbad.out:
+N /A
+? Net does not cross-match. It has 7 connections.
+N /B
+? Net does not cross-match. It has 7 connections.
 
 mergenet.out:
 
 termbad.out:
+T -1  A /A
+? Terminal A in the schematic failed to match any terminal in the layout.
+T -1  B /B
+? Terminal B in the schematic failed to match any terminal in the layout.
 
 prunenet.out:
 
@@ -78,12 +97,32 @@ audit.out:
 Probe files from /home/ugrads/r/rohitbarichello/ECEN454/LVS/layout
 
 devbad.out:
+I /I1/+0
+? Device does not cross-match.
 
 netbad.out:
+N /A
+? Net does not cross-match. It has 8 connections.
+N /B
+? Net does not cross-match. It has 6 connections.
 
 mergenet.out:
 
 termbad.out:
+T /I0/+0 S /GND
+? Terminal "S" on device /I0/+0 should be connected to /net24 instead of /GND
+T /I2/+1 D /Cout
+? Terminal "D" on device /I2/+1 should be connected to /GND instead of /Cout
+T /I1/+1 G /B
+? Terminal "G" on device /I1/+1 should be connected to /A instead of /B
+T /I2/+0 S /GND
+? Terminal "S" on device /I2/+0 should be connected to /Cout instead of /GND
+T /I0/+1 D /net24
+? Terminal "D" on device /I0/+1 should be connected to /GND instead of /net24
+T -1  A /A
+? Terminal A in the layout failed to match any terminal in the schematic.
+T -1  B /B
+? Terminal B in the layout failed to match any terminal in the schematic.
 
 prunenet.out:
 
