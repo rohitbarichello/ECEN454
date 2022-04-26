@@ -6,36 +6,36 @@ INFO (TECH-150003): The technology database "NCSU_TechLib_tsmc02" has been autom
 updated from revision 226610(DM 0) to revision 227612(DM 3) in virtual memory.
 
 
-Begin netlist:    Apr 20 13:40:06 2022
+Begin netlist:    Apr 25 01:49:20 2022
 	view name list	= ("auLvs" "extracted" "schematic")
 	stop name list	= ("auLvs")
 	library name	= "Design"
-	cell name	= "1BitAdder"
-	view name	= "schematic"
+	cell name	= "flip_flop"
+	view name	= "extracted"
 	globals lib	= "basic"
 Running Artist Flat Netlisting ...
 *WARNING* Parameter 'lxUseCell' already exists.
-End netlist:    Apr 20 13:40:06 2022
+End netlist:    Apr 25 01:49:20 2022
 
 Moving original netlist to extNetlist
 Removing parasitic components from netlist
 	presistors removed:  0
-	pcapacitors removed: 90
+	pcapacitors removed: 51
 	pinductors removed:  0
 	pdiodes removed:     0
 	trans lines removed: 0
-	45 nodes merged into 45 nodes
+	13 nodes merged into 13 nodes
 
 
-Begin netlist:    Apr 20 13:40:06 2022
+Begin netlist:    Apr 25 01:49:21 2022
 	view name list	= ("auLvs" "schematic")
 	stop name list	= ("auLvs")
 	library name	= "Design"
-	cell name	= "1BitAdder"
+	cell name	= "flip_flop"
 	view name	= "schematic"
 	globals lib	= "basic"
 Running Artist Flat Netlisting ...
-End netlist:    Apr 20 13:40:07 2022
+End netlist:    Apr 25 01:49:21 2022
 
 Moving original netlist to extNetlist
 Removing parasitic components from netlist
@@ -44,36 +44,36 @@ Removing parasitic components from netlist
 	pinductors removed:  0
 	pdiodes removed:     0
 	trans lines removed: 0
-	57 nodes merged into 57 nodes
+	13 nodes merged into 13 nodes
 
 Running netlist comparison program:  LVS
-Begin comparison:    Apr 20 13:40:07 2022
+Begin comparison:    Apr 25 01:49:21 2022
 @(#)$CDS: LVS version 6.1.8-64b 08/04/2020 19:19 (cpgsrv11) $
 
-The net-lists failed to match.
+The net-lists match.
 
                              layout  schematic
                                 instances
-        un-matched              1       1      
-        rewired                 5       0      
+        un-matched              0       0      
+        rewired                 0       0      
         size errors             0       0      
         pruned                  0       0      
-        active                  36      36     
-        total                   36      36     
+        active                  20      20     
+        total                   20      20     
 
                                   nets
-        un-matched              2       2      
+        un-matched              0       0      
         merged                  0       0      
         pruned                  0       0      
-        active                  25      25     
-        total                   25      25     
+        active                  13      13     
+        total                   13      13     
 
                                 terminals
-        un-matched              2       2      
+        un-matched              0       0      
         matched but
         different type          0       0      
-        total                   7       7      
-End comparison:      Apr 20 13:40:07 2022
+        total                   6       6      
+End comparison:      Apr 25 01:49:21 2022
 
 
 Comparison program completed successfully.

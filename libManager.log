@@ -1,12 +1,12 @@
 \o Program:		@(#)$CDS: libManager version 6.1.8 - CAT37 06/26/2020 22:02 (sjfhw830) $
 \o Sub version:		sub-version  s131 
-\o Arguments:		-mpssession virtuoso34362 -mpshost n01-zeus.olympus.ece.tamu.edu 
+\o Arguments:		-mpssession virtuoso36000 -mpshost n01-zeus.olympus.ece.tamu.edu 
 \o Working Directory:	n01-zeus.olympus.ece.tamu.edu:/home/ugrads/r/rohitbarichello/ECEN454
 \o 64-bit offsets
 \o Qt version: 		5.9.1
 \o Log file is "/home/ugrads/r/rohitbarichello/ECEN454/libManager.log".
 \o Opening libManager window.
-\a nrResizeWindow(cdsLibManager list(9 38 958 853))
+\a nrResizeWindow(cdsLibManager list(9 38 958 807))
 \a nrSetCurrentWindow(cdsLibManager)
 \o changeWorkingDir("/home/ugrads/r/rohitbarichello/ECEN454") unnecessary.
 \o ddSetForcedLib("") unnecessary.
@@ -16,51 +16,73 @@
 \a nrResizeWindow(cdsLibManager list(1 38 958 853))
 \a cdsLibManager->libListBox->value = "Design"
 \a cdsLibManager->libLineEdit->value = "Design"
-\a cdsLibManager->cellListBox->value = "1BitAdder"
-\a cdsLibManager->cellLineEdit->value = "1BitAdder"
-\a cdsLibManager->viewListBox->value = "layout"
-\a cdsLibManager->viewLineEdit->value = "layout"
-\o MPS request: edit design
-\a nrListItemAction(cdsLibManager->gdmXTView 0 0)
-\a cdsLibManager->libListBox->value = nil
-\a cdsLibManager->libLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = "1BitAdder_Simulate"
+\a cdsLibManager->cellLineEdit->value = "1BitAdder_Simulate"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->cellLineEdit->value = ""
 \a cdsLibManager->cellListBox->value = nil
 \a cdsLibManager->viewLineEdit->value = ""
 \a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->cellListBox->value = "1BitAdder_Simulate"
+\a cdsLibManager->cellLineEdit->value = "1BitAdder_Simulate"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->cellListBox 1 0)
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->libLineEdit->value = ""
 \a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
 \a cdsLibManager->libListBox->value = "Design"
 \a cdsLibManager->libLineEdit->value = "Design"
-\a cdsLibManager->cellListBox->value = "1BitAdder"
-\a cdsLibManager->cellLineEdit->value = "1BitAdder"
-\a cdsLibManager->viewListBox->value = "layout"
-\a cdsLibManager->viewLineEdit->value = "layout"
+\a cdsLibManager->cellListBox->value = "1BitAdder_Simulate"
+\a cdsLibManager->cellLineEdit->value = "1BitAdder_Simulate"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
 \a cdsLibManager->viewLineEdit->value = ""
 \a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "layout"
-\a cdsLibManager->viewLineEdit->value = "layout"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
 \a nrSetCurrentWindow(cdsLibManager)
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->viewListBox->value = "extracted"
-\a cdsLibManager->viewLineEdit->value = "extracted"
-\o MPS request: edit design
-\a nrListItemAction(cdsLibManager->gdmXTView 0 0)
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->libLineEdit->value = ""
+\a cdsLibManager->cellLineEdit->value = ""
 \a cdsLibManager->viewLineEdit->value = ""
-\a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->viewListBox->value = "extracted"
-\a cdsLibManager->viewLineEdit->value = "extracted"
+\a cdsLibManager->cellListBox->value = nil
 \a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->libListBox->value = "Design"
+\a cdsLibManager->libLineEdit->value = "Design"
+\a cdsLibManager->cellListBox->value = "1BitAdder_Simulate"
+\a cdsLibManager->cellLineEdit->value = "1BitAdder_Simulate"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
 \a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = "extracted"
-\a cdsLibManager->viewLineEdit->value = "extracted"
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->FileNewCVButton->value = t
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->libLineEdit->value = ""
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->libListBox->value = "Design"
+\a cdsLibManager->libLineEdit->value = "Design"
+\a cdsLibManager->cellListBox->value = "1BitAdder_Simulate"
+\a cdsLibManager->cellLineEdit->value = "1BitAdder_Simulate"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
