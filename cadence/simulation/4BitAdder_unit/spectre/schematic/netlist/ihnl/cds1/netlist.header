@@ -1,0 +1,5 @@
+
+// Library name: Design
+// Cell name: inverter
+// View name: schematic
+subckt inverter GND VDD in out

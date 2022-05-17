@@ -1,0 +1,10 @@
+    P1 (Y A VDD VDD) tsmc20P w=700n l=200n as=3.5e-13 ad=3.5e-13 ps=2.4u \
+        pd=2.4u m=1 region=sat
+    P0 (Y B VDD VDD) tsmc20P w=700n l=200n as=3.5e-13 ad=3.5e-13 ps=2.4u \
+        pd=2.4u m=1 region=sat
+    N1 (net18 B GND GND) tsmc20N w=300n l=200n as=1.5e-13 ad=1.5e-13 \
+        ps=1.6u pd=1.6u m=1 region=sat
+    N0 (Y A net18 GND) tsmc20N w=300n l=200n as=1.5e-13 ad=1.5e-13 ps=1.6u \
+        pd=1.6u m=1 region=sat
+ends nand2
+// End of subcircuit definition.

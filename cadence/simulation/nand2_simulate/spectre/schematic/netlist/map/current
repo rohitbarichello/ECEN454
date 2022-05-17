@@ -1,0 +1,20 @@
+( ( nil
+  version "2.1"
+  mapType "incremental"
+  blockName "nand2_simulate"
+  repList "spectre cmos_sch cmos.sch schematic veriloga"
+  stopList "spectre"
+  globalList "vdd! gnd!"
+  hierDelim "."
+  netlistDir "/home/ugrads/r/rohitbarichello/cadence/simulation/nand2_simulate/spectre/schematic/netlist"
+ )
+( net
+( "gnd!" "0" )
+ )
+( model
+( "Design/nand2_simulate/schematic" "nand2_simulate" )
+( "Design/nand2/schematic" "nand2" )
+ )
+( "nand2" "ihnl/cds0/map" )
+( "nand2_simulate" "ihnl/cds1/map" )
+ )

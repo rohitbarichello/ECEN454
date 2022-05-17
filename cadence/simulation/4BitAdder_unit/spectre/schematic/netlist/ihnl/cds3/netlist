@@ -1,0 +1,7 @@
+    I2 (net24 net23 GND VDD Cout) nand2
+    I1 (A B GND VDD net23) nand2
+    I0 (net16 Cin GND VDD net24) nand2
+    I4 (net16 Cin GND VDD S) xor2
+    I3 (A B GND VDD net16) xor2
+ends Design_1BitAdder_schematic
+// End of subcircuit definition.

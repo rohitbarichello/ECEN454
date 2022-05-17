@@ -1,0 +1,6 @@
+    I3 (A1 B1 net32 net33 GND S1 VDD) Design_1BitAdder_schematic
+    I2 (A3 B3 net34 Cout GND S3 VDD) Design_1BitAdder_schematic
+    I1 (A2 B2 net33 net34 GND S2 VDD) Design_1BitAdder_schematic
+    I0 (A0 B0 Cin net32 GND S0 VDD) Design_1BitAdder_schematic
+ends Design_4BitAdder_schematic
+// End of subcircuit definition.

@@ -1,0 +1,7 @@
+CADENCE IHNL11145
+
+Design nand2 schematic cds0
+Design inverter schematic cds1
+Design xor2 schematic cds2
+Design 1BitAdder schematic cds3
+Design 1BitAdder_Simulate schematic cds4

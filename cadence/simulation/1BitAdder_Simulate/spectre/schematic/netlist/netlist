@@ -1,0 +1,77 @@
+
+// Library name: Design
+// Cell name: nand2
+// View name: schematic
+subckt nand2 A B GND VDD Y
+    P1 (Y A VDD VDD) tsmc20P w=700n l=200n as=3.5e-13 ad=3.5e-13 ps=2.4u \
+        pd=2.4u m=1 region=sat
+    P0 (Y B VDD VDD) tsmc20P w=700n l=200n as=3.5e-13 ad=3.5e-13 ps=2.4u \
+        pd=2.4u m=1 region=sat
+    N1 (net18 B GND GND) tsmc20N w=300n l=200n as=1.5e-13 ad=1.5e-13 \
+        ps=1.6u pd=1.6u m=1 region=sat
+    N0 (Y A net18 GND) tsmc20N w=300n l=200n as=1.5e-13 ad=1.5e-13 ps=1.6u \
+        pd=1.6u m=1 region=sat
+ends nand2
+// End of subcircuit definition.
+
+// Library name: Design
+// Cell name: inverter
+// View name: schematic
+subckt inverter GND VDD in out
+    P0 (out in VDD VDD) tsmc20P w=700n l=200n as=3.5e-13 ad=3.5e-13 \
+        ps=2.4u pd=2.4u m=1 region=sat
+    N0 (out in GND GND) tsmc20N w=300n l=200n as=1.5e-13 ad=1.5e-13 \
+        ps=1.6u pd=1.6u m=1 region=sat
+ends inverter
+// End of subcircuit definition.
+
+// Library name: Design
+// Cell name: xor2
+// View name: schematic
+subckt xor2 A B GND VDD Y
+    I1 (GND VDD B net26) inverter
+    I0 (GND VDD A net12) inverter
+    P3 (Y A net29 VDD) tsmc20P w=700n l=200n as=3.5e-13 ad=3.5e-13 ps=2.4u \
+        pd=2.4u m=1 region=sat
+    P2 (Y net12 net34 VDD) tsmc20P w=700n l=200n as=3.5e-13 ad=3.5e-13 \
+        ps=2.4u pd=2.4u m=1 region=sat
+    P1 (net29 net26 VDD VDD) tsmc20P w=700n l=200n as=3.5e-13 ad=3.5e-13 \
+        ps=2.4u pd=2.4u m=1 region=sat
+    P0 (net34 B VDD VDD) tsmc20P w=700n l=200n as=3.5e-13 ad=3.5e-13 \
+        ps=2.4u pd=2.4u m=1 region=sat
+    N3 (net31 B GND GND) tsmc20N w=300n l=200n as=1.5e-13 ad=1.5e-13 \
+        ps=1.6u pd=1.6u m=1 region=sat
+    N2 (net35 net26 GND GND) tsmc20N w=300n l=200n as=1.5e-13 ad=1.5e-13 \
+        ps=1.6u pd=1.6u m=1 region=sat
+    N1 (Y A net31 GND) tsmc20N w=300n l=200n as=1.5e-13 ad=1.5e-13 ps=1.6u \
+        pd=1.6u m=1 region=sat
+    N0 (Y net12 net35 GND) tsmc20N w=300n l=200n as=1.5e-13 ad=1.5e-13 \
+        ps=1.6u pd=1.6u m=1 region=sat
+ends xor2
+// End of subcircuit definition.
+
+// Library name: Design
+// Cell name: 1BitAdder
+// View name: schematic
+subckt Design_1BitAdder_schematic A B Cin Cout GND S VDD
+    I2 (net24 net23 GND VDD Cout) nand2
+    I1 (A B GND VDD net23) nand2
+    I0 (net16 Cin GND VDD net24) nand2
+    I4 (net16 Cin GND VDD S) xor2
+    I3 (A B GND VDD net16) xor2
+ends Design_1BitAdder_schematic
+// End of subcircuit definition.
+
+// Library name: Design
+// Cell name: 1BitAdder_Simulate
+// View name: schematic
+I0 (A B Cin Cout 0 S vdd!) Design_1BitAdder_schematic
+V0 (vdd! 0) vsource type=dc dc=1.8
+V3 (Cin 0) vsource type=pulse dc=1.8 val0=0 val1=1.8 period=12n delay=3n \
+        rise=100p fall=100p width=5n
+V2 (B 0) vsource type=pulse dc=1.8 val0=0 val1=1.8 period=12n delay=3n \
+        rise=100p fall=100p width=5n
+V1 (A 0) vsource type=pulse dc=1.8 val0=0 val1=1.8 period=12n delay=3n \
+        rise=100p fall=100p width=5n
+C1 (S 0) capacitor c=50f m=1
+C0 (Cout 0) capacitor c=50f m=1

@@ -1,0 +1,14 @@
+CADENCE IHNL11140
+$model
+Design/1BitAdder/schematic Design_1BitAdder_schematic
+Design/xor2/schematic xor2
+Design/nand2/schematic nand2
+Design/inverter/schematic inverter
+Design/1BitAdder_Simulate/schematic Design_1BitAdder_Simulate_schematic
+$endmodel
+$net
+gnd! 0
+vdd! vdd!
+$endnet
+$param
+$endparam

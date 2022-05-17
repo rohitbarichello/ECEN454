@@ -1,0 +1,11 @@
+CADENCE IHNL11140
+$model
+Design/nand2/schematic nand2
+Design/nand2_simulate/schematic nand2_simulate
+$endmodel
+$net
+gnd! 0
+vdd! vdd!
+$endnet
+$param
+$endparam

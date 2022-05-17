@@ -1,0 +1,112 @@
+
+Spectre (R) Circuit Simulator
+Version 18.1.0.421.isr9 32bit -- 17 Jul 2019
+Copyright (C) 1989-2019 Cadence Design Systems, Inc. All rights reserved worldwide. Cadence and Spectre are registered trademarks of Cadence Design Systems, Inc. All others are the property of their respective holders.
+
+Includes RSA BSAFE(R) Cryptographic or Security Protocol Software from RSA Security, Inc.
+
+User: rohitbarichello   Host: n02-hera.olympus.ece.tamu.edu   HostID: A8C00C02   PID: 21312
+Memory  available: 469.1413 GB  physical: 540.7671 GB
+Linux   : CentOS Linux release 7.9.2009 (Core)
+CPU Type: Intel(R) Xeon(R) CPU E5-2650 v3 @ 2.30GHz
+        Socket: Processors [Frequency] (Hyperthreaded Processor)
+        0:       0 [2600.0] ( 20 ),  2 [2599.9] ( 22 ),  4 [2600.0] ( 24 )
+                 6 [2600.0] ( 26 ),  8 [2600.0] ( 28 ), 10 [2600.0] ( 30 )
+                12 [2600.0] ( 32 ), 14 [2600.0] ( 34 ), 16 [2599.9] ( 36 )
+                18 [2600.0] ( 38 )
+        1:       1 [2780.0] ( 21 ),  3 [2774.1] ( 23 ),  5 [1200.1] ( 25 )
+                 7 [1248.7] ( 27 ),  9 [1200.0] ( 29 ), 11 [1247.8] ( 31 )
+                13 [1283.5] ( 33 ), 15 [1797.7] ( 35 ), 17 [1897.7] ( 37 )
+                19 [1797.7] ( 39 )
+        
+System load averages (1min, 5min, 15min) : 28.5 %, 28.4 %, 24.2 %
+Hyperthreading is enabled
+Affinity is set by user to processors:  0 20 
+
+Simulating `simcap_nand2.spi' on n02-hera.olympus.ece.tamu.edu at 9:40:50 PM, Wed Apr 6, 2022 (process id: 21312).
+Current working directory: /home/ugrads/r/rohitbarichello/cadence/cellcharacs
+Command line:
+    /opt/coe/cadence/SPECTRE181/tools.lnx86/bin/spectre  \
+        simcap_nand2.spi
+
+Loading /opt/coe/cadence/SPECTRE181/tools.lnx86/cmi/lib/5.0/libinfineon_sh.so ...
+Loading /opt/coe/cadence/SPECTRE181/tools.lnx86/cmi/lib/5.0/libphilips_o_sh.so ...
+Loading /opt/coe/cadence/SPECTRE181/tools.lnx86/cmi/lib/5.0/libphilips_sh.so ...
+Loading /opt/coe/cadence/SPECTRE181/tools.lnx86/cmi/lib/5.0/libsparam_sh.so ...
+Loading /opt/coe/cadence/SPECTRE181/tools.lnx86/cmi/lib/5.0/libstmodels_sh.so ...
+Reading file:  /home/ugrads/r/rohitbarichello/cadence/cellcharacs/simcap_nand2.spi
+Reading file:  /opt/coe/cadence/SPECTRE181/tools.lnx86/spectre/etc/configs/mapsubckt.cfg
+Reading file:  /opt/coe/cadence/SPECTRE181/tools.lnx86/spectre/etc/configs/spectre.cfg
+Reading file:  /home/ugrads/r/rohitbarichello/cadence/cellcharacs/model18.spi
+Reading file:  /home/ugrads/r/rohitbarichello/cadence/cellcharacs/cell18.spi
+Time for NDB Parsing: CPU = 89.203 ms, elapsed = 204.634 ms.
+Time accumulated: CPU = 129.618 ms, elapsed = 204.641 ms.
+Peak resident memory used = 45.4 Mbytes.
+
+Time for Elaboration: CPU = 19.584 ms, elapsed = 22.568 ms.
+Time accumulated: CPU = 149.467 ms, elapsed = 227.515 ms.
+Peak resident memory used = 50.3 Mbytes.
+
+
+Time for EDB Visiting: CPU = 1.133 ms, elapsed = 1.14489 ms.
+Time accumulated: CPU = 150.863 ms, elapsed = 228.964 ms.
+Peak resident memory used = 50.9 Mbytes.
+
+
+Warning from spectre during initial setup.
+    WARNING (CMI-2426): X1.M2: `Pdiblc2' = -8.75063e-06 is negative.
+
+
+Global user options:
+
+Scoped user options:
+
+Circuit inventory:
+              nodes 6
+            bsim3v3 4     
+           resistor 1     
+            vsource 3     
+
+Analysis and control statement inventory:
+                 ac 1     
+
+Output statements:
+             .probe 0     
+           .measure 0     
+               save 1     
+
+
+Notice from spectre during initial setup.
+    1 resistor is changed to resistance form because its value is less than 'rthresh'.
+Warning from spectre during initial setup.
+    WARNING (CMI-2426): X1.M2: `Pdiblc2' = -8.75063e-06 is negative.
+
+Time for parsing: CPU = 29.937 ms, elapsed = 32.8782 ms.
+Time accumulated: CPU = 181.05 ms, elapsed = 262.121 ms.
+Peak resident memory used = 53 Mbytes.
+
+~~~~~~~~~~~~~~~~~~~~~~
+Pre-Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~
+
+*******************************************
+AC Analysis `Freq': freq = (10 Hz -> 1 GHz)
+*******************************************
+DC simulation time: CPU = 1.198 ms, elapsed = 600.1 us.
+
+Opening the PSF file simcap_nand2.raw/Freq.ac ...
+.......9.......8.......7.......6.......5.......4.......3.......2.......1.......0
+Accumulated DC solution time =            0 s.
+Intrinsic ac analysis time =              0 s.
+Total time required for ac analysis `Freq': CPU = 15.31 ms, elapsed = 20.4208 ms.
+Time accumulated: CPU = 205.951 ms, elapsed = 294.499 ms.
+Peak resident memory used = 54.5 Mbytes.
+
+
+Aggregate audit (9:40:51 PM, Wed Apr 6, 2022):
+Time used: CPU = 214 ms, elapsed = 306 ms, util. = 69.8%.
+Time spent in licensing: elapsed = 20.5 ms, percentage of total = 6.69%.
+Peak memory used = 55 Mbytes.
+Simulation started at: 9:40:50 PM, Wed Apr 6, 2022, ended at: 9:40:51 PM, Wed Apr 6, 2022, with elapsed time (wall clock): 306 ms.
+spectre completes with 0 errors, 2 warnings, and 2 notices.

@@ -1,0 +1,5 @@
+
+// Library name: Design
+// Cell name: 1BitAdder
+// View name: schematic
+subckt Design_1BitAdder_schematic A B Cin Cout GND S VDD

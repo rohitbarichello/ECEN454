@@ -1,0 +1,12 @@
+CADENCE IHNL11140
+$model
+Design/xor2/schematic xor2
+Design/inverter/schematic inverter
+Design/xor2_simulate/schematic xor2_simulate
+$endmodel
+$net
+gnd! 0
+vdd! vdd!
+$endnet
+$param
+$endparam

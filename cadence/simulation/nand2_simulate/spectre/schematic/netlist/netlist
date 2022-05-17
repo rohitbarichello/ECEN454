@@ -1,0 +1,26 @@
+
+// Library name: Design
+// Cell name: nand2
+// View name: schematic
+subckt nand2 A B GND VDD Y
+    P1 (Y A VDD VDD) tsmc20P w=700n l=200n as=3.5e-13 ad=3.5e-13 ps=2.4u \
+        pd=2.4u m=1 region=sat
+    P0 (Y B VDD VDD) tsmc20P w=700n l=200n as=3.5e-13 ad=3.5e-13 ps=2.4u \
+        pd=2.4u m=1 region=sat
+    N1 (net18 B GND GND) tsmc20N w=300n l=200n as=1.5e-13 ad=1.5e-13 \
+        ps=1.6u pd=1.6u m=1 region=sat
+    N0 (Y A net18 GND) tsmc20N w=300n l=200n as=1.5e-13 ad=1.5e-13 ps=1.6u \
+        pd=1.6u m=1 region=sat
+ends nand2
+// End of subcircuit definition.
+
+// Library name: Design
+// Cell name: nand2_simulate
+// View name: schematic
+I0 (A B 0 vdd! out) nand2
+V1 (B 0) vsource type=pulse dc=1.8 val0=0 val1=1.8 period=12n delay=3n \
+        rise=100p fall=100p width=5n
+V0 (A 0) vsource type=pulse dc=1.8 val0=0 val1=1.8 period=12n delay=3n \
+        rise=100p fall=100p width=5n
+V2 (vdd! 0) vsource type=dc dc=1.8
+C0 (out 0) capacitor c=50f m=1

@@ -1,0 +1,4 @@
+"Design.nand2.schematic.termorder" (("A" "B" "GND" "VDD" "Y") ("A" "B" "GND" "VDD" "Y"))
+"Design.1BitAdder.schematic.termorder" (("A" "B" "Cin" "Cout" "GND" "S" "VDD") ("A" "B" "Cin" "Cout" "GND" "S" "VDD"))
+"Design.xor2.schematic.termorder" (("A" "B" "GND" "VDD" "Y") ("A" "B" "GND" "VDD" "Y"))
+"Design.inverter.schematic.termorder" (("GND" "VDD" "in" "out") ("GND" "VDD" "in" "out"))

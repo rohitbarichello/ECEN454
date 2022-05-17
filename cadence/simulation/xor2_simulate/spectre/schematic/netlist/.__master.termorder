@@ -1,0 +1,2 @@
+"Design.xor2.schematic.termorder" (("A" "B" "GND" "VDD" "Y") ("A" "B" "GND" "VDD" "Y"))
+"Design.inverter.schematic.termorder" (("GND" "VDD" "in" "out") ("GND" "VDD" "in" "out"))

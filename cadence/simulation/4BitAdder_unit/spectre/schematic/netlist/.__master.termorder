@@ -1,0 +1,5 @@
+"Design.nand2.schematic.termorder" (("A" "B" "GND" "VDD" "Y") ("A" "B" "GND" "VDD" "Y"))
+"Design.4BitAdder.schematic.termorder" (("A0" "A1" "A2" "A3" "B0" "B1" "B2" "B3" "Cin" "Cout" "GND" "S0" "S1" "S2" "S3" "VDD") ("A0" "A1" "A2" "A3" "B0" "B1" "B2" "B3" "Cin" "Cout" "GND" "S0" "S1" "S2" "S3" "VDD"))
+"Design.1BitAdder.schematic.termorder" (("A" "B" "Cin" "Cout" "GND" "S" "VDD") ("A" "B" "Cin" "Cout" "GND" "S" "VDD"))
+"Design.xor2.schematic.termorder" (("A" "B" "GND" "VDD" "Y") ("A" "B" "GND" "VDD" "Y"))
+"Design.inverter.schematic.termorder" (("GND" "VDD" "in" "out") ("GND" "VDD" "in" "out"))

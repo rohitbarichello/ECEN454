@@ -1,0 +1,26 @@
+( ( nil
+  version "2.1"
+  mapType "incremental"
+  blockName "1BitAdder_Simulate"
+  repList "spectre cmos_sch cmos.sch schematic veriloga"
+  stopList "spectre"
+  globalList "vdd! gnd!"
+  hierDelim "."
+  netlistDir "/home/ugrads/r/rohitbarichello/cadence/simulation/1BitAdder_Simulate/spectre/schematic/netlist"
+ )
+( net
+( "gnd!" "0" )
+ )
+( model
+( "Design/inverter/schematic" "inverter" )
+( "Design/1BitAdder/schematic" "Design_1BitAdder_schematic" )
+( "Design/nand2/schematic" "nand2" )
+( "Design/xor2/schematic" "xor2" )
+( "Design/1BitAdder_Simulate/schematic" "Design_1BitAdder_Simulate_schematic" )
+ )
+( "Design_1BitAdder_schematic" "ihnl/cds3/map" )
+( "inverter" "ihnl/cds1/map" )
+( "nand2" "ihnl/cds0/map" )
+( "Design_1BitAdder_Simulate_schematic" "ihnl/cds4/map" )
+( "xor2" "ihnl/cds2/map" )
+ )

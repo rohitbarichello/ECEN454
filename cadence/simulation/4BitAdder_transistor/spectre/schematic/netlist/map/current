@@ -1,0 +1,14 @@
+( ( nil
+  version "2.1"
+  mapType "incremental"
+  blockName "4BitAdder_transistor"
+  repList "spectre cmos_sch cmos.sch schematic veriloga"
+  stopList "spectre"
+  hierDelim "."
+  netlistDir "/home/ugrads/r/rohitbarichello/cadence/simulation/4BitAdder_transistor/spectre/schematic/netlist"
+ )
+( model
+( "Design/4BitAdder_transistor/schematic" "Design_4BitAdder_transistor_schematic" )
+ )
+( "Design_4BitAdder_transistor_schematic" "ihnl/cds0/map" )
+ )

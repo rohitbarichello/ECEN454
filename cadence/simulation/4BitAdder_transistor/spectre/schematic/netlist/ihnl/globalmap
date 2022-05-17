@@ -1,0 +1,8 @@
+CADENCE IHNL11140
+$model
+Design/4BitAdder_transistor/schematic Design_4BitAdder_transistor_schematic
+$endmodel
+$net
+$endnet
+$param
+$endparam

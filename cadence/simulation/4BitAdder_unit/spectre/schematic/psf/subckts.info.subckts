@@ -1,0 +1,46 @@
+HEADER
+"PSFversion" "1.00"
+"simulator" "spectre"
+"version" "18.1.0.421.isr9"
+"date" "12:21:02 AM, Thur Apr 28, 2022"
+"design" "// Generated for: spectre"
+"analysis type" "info.subckts"
+"analysis name" "subckts"
+"analysis description" "Circuit Information"
+"xVecSorted" "unknown"
+"tolerance.relative" 0.00100000
+TYPE
+"subckt" STRUCT(
+"subckt_params" STRING *
+"subckt_terminals" STRING *
+"subckt_instances" STRING *
+) PROP(
+"key" "sub"
+)
+VALUE
+"inverter" "subckt" (
+""
+"GND VDD in out"
+"I0.I3.I4.I1 I0.I3.I4.I0 I0.I3.I3.I1 I0.I3.I3.I0 I0.I2.I4.I1 I0.I2.I4.I0 I0.I2.I3.I1 I0.I2.I3.I0 I0.I1.I4.I1 I0.I1.I4.I0 I0.I1.I3.I1 I0.I1.I3.I0 I0.I0.I4.I1 I0.I0.I4.I0 I0.I0.I3.I1 I0.I0.I3.I0"
+)
+"xor2" "subckt" (
+""
+"A B GND VDD Y"
+"I0.I3.I4 I0.I3.I3 I0.I2.I4 I0.I2.I3 I0.I1.I4 I0.I1.I3 I0.I0.I4 I0.I0.I3"
+)
+"Design_1BitAdder_schematic" "subckt" (
+""
+"A B Cin Cout GND S VDD"
+"I0.I3 I0.I2 I0.I1 I0.I0"
+)
+"Design_4BitAdder_schematic" "subckt" (
+""
+"A0 A1 A2 A3 B0 B1 B2 B3 Cin Cout GND S0 S1 S2 S3 VDD"
+"I0"
+)
+"nand2" "subckt" (
+""
+"A B GND VDD Y"
+"I0.I3.I2 I0.I3.I1 I0.I3.I0 I0.I2.I2 I0.I2.I1 I0.I2.I0 I0.I1.I2 I0.I1.I1 I0.I1.I0 I0.I0.I2 I0.I0.I1 I0.I0.I0"
+)
+END

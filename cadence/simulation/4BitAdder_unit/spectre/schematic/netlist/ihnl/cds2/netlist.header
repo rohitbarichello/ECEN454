@@ -1,0 +1,5 @@
+
+// Library name: Design
+// Cell name: xor2
+// View name: schematic
+subckt xor2 A B GND VDD Y

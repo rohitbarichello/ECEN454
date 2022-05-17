@@ -1,0 +1,42 @@
+    P17 (net39 net38 VDD VDD) tsmc20P w=700n l=200n as=3.5e-13 ad=3.5e-13 \
+        ps=2.4u pd=2.4u m=1 region=sat
+    P16 (net25 CLK net39 VDD) tsmc20P w=700n l=200n as=3.5e-13 ad=3.5e-13 \
+        ps=2.4u pd=2.4u m=1 region=sat
+    P15 (net38 net25 VDD VDD) tsmc20P w=700n l=200n as=3.5e-13 ad=3.5e-13 \
+        ps=2.4u pd=2.4u m=1 region=sat
+    P14 (Q net38 VDD VDD) tsmc20P w=700n l=200n as=3.5e-13 ad=3.5e-13 \
+        ps=2.4u pd=2.4u m=1 region=sat
+    P13 (net25 _CLK net051 VDD) tsmc20P w=700n l=200n as=3.5e-13 \
+        ad=3.5e-13 ps=2.4u pd=2.4u m=1 region=sat
+    P12 (net051 net13 VDD VDD) tsmc20P w=700n l=200n as=3.5e-13 ad=3.5e-13 \
+        ps=2.4u pd=2.4u m=1 region=sat
+    P11 (net19 net051 VDD VDD) tsmc20P w=700n l=200n as=3.5e-13 ad=3.5e-13 \
+        ps=2.4u pd=2.4u m=1 region=sat
+    P10 (net19 _CLK net13 VDD) tsmc20P w=700n l=200n as=3.5e-13 ad=3.5e-13 \
+        ps=2.4u pd=2.4u m=1 region=sat
+    P1 (net11 CLK net13 VDD) tsmc20P w=700n l=200n as=3.5e-13 ad=3.5e-13 \
+        ps=2.4u pd=2.4u m=1 region=sat
+    P0 (net11 D VDD VDD) tsmc20P w=700n l=200n as=3.5e-13 ad=3.5e-13 \
+        ps=2.4u pd=2.4u m=1 region=sat
+    N17 (GND net38 net39 GND) tsmc20N w=300n l=200n as=1.5e-13 ad=1.5e-13 \
+        ps=1.6u pd=1.6u m=1 region=sat
+    N16 (net25 _CLK net39 GND) tsmc20N w=300n l=200n as=1.5e-13 ad=1.5e-13 \
+        ps=1.6u pd=1.6u m=1 region=sat
+    N15 (net38 net25 GND GND) tsmc20N w=300n l=200n as=1.5e-13 ad=1.5e-13 \
+        ps=1.6u pd=1.6u m=1 region=sat
+    N14 (Q net38 GND GND) tsmc20N w=300n l=200n as=1.5e-13 ad=1.5e-13 \
+        ps=1.6u pd=1.6u m=1 region=sat
+    N1 (net11 _CLK net13 GND) tsmc20N w=300n l=200n as=1.5e-13 ad=1.5e-13 \
+        ps=1.6u pd=1.6u m=1 region=sat
+    N0 (net11 D GND GND) tsmc20N w=300n l=200n as=1.5e-13 ad=1.5e-13 \
+        ps=1.6u pd=1.6u m=1 region=sat
+    N13 (net25 CLK net051 GND) tsmc20N w=300n l=200n as=1.5e-13 ad=1.5e-13 \
+        ps=1.6u pd=1.6u m=1 region=sat
+    N12 (net051 net13 GND GND) tsmc20N w=300n l=200n as=1.5e-13 ad=1.5e-13 \
+        ps=1.6u pd=1.6u m=1 region=sat
+    N11 (GND net051 net19 GND) tsmc20N w=300n l=200n as=1.5e-13 ad=1.5e-13 \
+        ps=1.6u pd=1.6u m=1 region=sat
+    N10 (net19 CLK net13 GND) tsmc20N w=300n l=200n as=1.5e-13 ad=1.5e-13 \
+        ps=1.6u pd=1.6u m=1 region=sat
+ends flip_flop
+// End of subcircuit definition.

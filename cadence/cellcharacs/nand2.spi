@@ -1,0 +1,19 @@
+;Spice netlist for a nand2  and a capacitor
+simulator lang=spectre
+
+include "model18.spi"
+include "cell18.spi"
+
+vgnd (gnd 0) vsource dc=0
+vvdd (vdd 0) vsource dc=1.8
+
+vpwl (nand2_in 0) vsource type=pwl wave=[0n 0 1n 0 1.2n 1.8 4n 1.8 4.2n 0]
+
+X1 (nand2_in vdd nand2_out vdd gnd) NAND2 wp=700n lp=200n wn=300n ln=200n
+
+;R1 (nand2_out 1) resistor r=1
+
+C1 (nand2_out 0) capacitor c=1f
+
+TransientAnalysis tran start=0 stop=10ns step=1ps
+save nand2_in nand2_out

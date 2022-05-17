@@ -1,0 +1,7 @@
+// Generated for: spectre
+// Generated on: Apr 26 14:03:38 2022
+// Design library name: Design
+// Design cell name: flip_flop_simulate
+// Design view name: schematic
+simulator lang=spectre
+global 0 vdd!

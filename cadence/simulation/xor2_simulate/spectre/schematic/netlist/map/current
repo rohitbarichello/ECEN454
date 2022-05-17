@@ -1,0 +1,22 @@
+( ( nil
+  version "2.1"
+  mapType "incremental"
+  blockName "xor2_simulate"
+  repList "spectre cmos_sch cmos.sch schematic veriloga"
+  stopList "spectre"
+  globalList "gnd! vdd!"
+  hierDelim "."
+  netlistDir "/home/ugrads/r/rohitbarichello/cadence/simulation/xor2_simulate/spectre/schematic/netlist"
+ )
+( net
+( "gnd!" "0" )
+ )
+( model
+( "Design/inverter/schematic" "inverter" )
+( "Design/xor2_simulate/schematic" "xor2_simulate" )
+( "Design/xor2/schematic" "xor2" )
+ )
+( "inverter" "ihnl/cds0/map" )
+( "xor2_simulate" "ihnl/cds2/map" )
+( "xor2" "ihnl/cds1/map" )
+ )

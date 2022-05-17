@@ -1,0 +1,5 @@
+
+// Library name: Design
+// Cell name: flip_flop
+// View name: schematic
+subckt flip_flop CLK D GND Q VDD _CLK

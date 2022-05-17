@@ -1,0 +1,116 @@
+### Custom WaveView ADV log file, revision O-2018.09 (build Aug 27, ) ###
+### created at 22:00:37 on Wed Apr  6 2022 (Linux AMD64) ###
+### Host Name: n02-hera.olympus.ece.tamu.edu   User ID:    PID: 31404   ###
+wv_start_log
+# (0) running in waveview only mode
+# (0) SW_SX_PERL_LIB defined
+# (0) SW_SX_TCL_LIB defined
+# (0) HOME defined
+wv_move_window {Custom WaveView} {} 137 166
+wv_select_window {Custom WaveView} 
+wv_resize_window {Custom WaveView} 889 586
+wv_press_tool_button {Custom WaveView} {} {OpenWaveform0} 
+wv_select_dialog {FileDialog} 
+wv_select_list_item {FileDialog} {} {FileList} {simcap_xor2.raw} 7
+wv_press_button {FileDialog} {} {Ok} 
+wv_select_list_item {FileDialog} {} {FileList} {Freq.ac} 2
+wv_dclick_list_item {FileDialog} {} {FileList} {Freq.ac} 2
+wv_press_tool_button {Custom WaveView} {} {OpenWaveformFile0} 
+wv_select_dialog {FileDialog} 
+wv_close_dialog {FileDialog} 
+wv_select_window {Custom WaveView} 
+wv_expand_tree_item {Custom WaveView} {} {hierview} {D0:Freq.ac(0)} {+sep=@}
+wv_select_tree_item {Custom WaveView} {} {hierview} {D0:Freq.ac(0)@toplevel(0)} {0} {+sep=@}
+wv_select_list_item {Custom WaveView} {} {sigview} {R1:1} 0
+wv_select_list_item {Custom WaveView} {} {sigview} {R1:1} 0
+wv_dclick_list_item {Custom WaveView} {} {sigview} {R1:1} 0
+wv_select_waveview 1 {waveview 1}
+wv_waveview_context_menu WV1.PANEL1:1.XAXIS1
+wv_select_waveview 1 {waveview 1}
+wv_select_menu_item {Custom WaveView} {waveview 1:1} {XAxisPopMenu.Linear Scale} 
+wv_press_tool_button {Custom WaveView} {} {WaveformMeasurementTool0} 
+wv_press_button {MeasurementTool} {} {Apply} 
+wv_press_button {MeasurementTool} {} {Apply} 
+wv_select_waveview 1 {waveview 1}
+wv_select_wv_item WV1.MEAS1
+wv_drag_item_to WV1 705 213
+wv_move_wv_item WV1.MEAS1 220 426
+wv_select_waveview 1 {waveview 1}
+wv_select_wv_item WV1.MEAS2
+wv_drag_item_to WV1 605 212
+wv_move_wv_item WV1.MEAS2 340 363
+wv_select_waveview 1 {waveview 1}
+wv_select_wv_item WV1.MEAS3
+wv_drag_item_to WV1 632 221
+wv_move_wv_item WV1.MEAS3 445 325
+wv_select_waveview 1 {waveview 1}
+wv_select_wv_item WV1.MEAS4
+wv_drag_item_to WV1 618 223
+wv_move_wv_item WV1.MEAS4 562 291
+wv_select_waveview 1 {waveview 1}
+wv_select_wv_item WV1.MEAS5
+wv_drag_item_to WV1 675 213
+wv_move_wv_item WV1.MEAS5 685 255
+wv_select_waveview 1 {waveview 1}
+wv_select_wv_item WV1.MEAS6
+wv_drag_item_to WV1 795 300
+wv_move_wv_item WV1.MEAS6 865 383
+wv_select_waveview 1 {waveview 1}
+wv_select_wv_item WV1.MEAS7
+wv_drag_item_to WV1 961 370
+wv_move_wv_item WV1.MEAS7 967 351
+wv_select_waveview 1 {waveview 1}
+wv_select_wv_item WV1.MEAS8
+wv_drag_item_to WV1 1100 298
+wv_move_wv_item WV1.MEAS8 1101 322
+wv_select_waveview 1 {waveview 1}
+wv_select_wv_item WV1.MEAS9
+wv_drag_item_to WV1 691 211
+wv_move_wv_item WV1.MEAS9 1240 260
+wv_select_waveview 1 {waveview 1}
+wv_select_wv_item WV1.MEAS10
+wv_drag_item_to WV1 766 206
+wv_move_wv_item WV1.MEAS10 1402 226
+wv_select_waveview 1 {waveview 1}
+wv_select_wv_item WV1.MEAS11
+wv_move_wv_item WV1.MEAS11 718 215
+wv_press_key Delete 976 379
+wv_select_dialog {Confirmation} 
+wv_press_button {Confirmation} {} {Cancel} 
+wv_select_window {Custom WaveView} 
+wv_select_waveview 1 {waveview 1}
+wv_select_wv_item WV1.MEAS11
+wv_move_wv_item WV1.MEAS11 853 230
+wv_select_waveview 1 {waveview 1}
+wv_select_wv_item WV1.MEAS11
+wv_move_wv_item WV1.MEAS11 896 252
+wv_select_waveview 1 {waveview 1}
+wv_select_wv_item WV1.MEAS11
+wv_move_wv_item WV1.MEAS11 923 271
+wv_select_waveview 1 {waveview 1}
+wv_waveview_context_menu WV1.MEAS11
+wv_select_waveview 1 {waveview 1}
+wv_select_wv_item WV1.MEAS11
+wv_drag_item_to WV1 952 296
+wv_move_wv_item WV1.MEAS11 915 286
+wv_select_waveview 1 {waveview 1}
+wv_select_wv_item WV1.MEAS11
+wv_drag_item_to WV1 928 300
+wv_move_wv_item WV1.MEAS11 876 190
+wv_select_waveview 1 {waveview 1}
+wv_waveview_context_menu WV1.MEAS11
+wv_select_waveview 1 {waveview 1}
+wv_select_wv_item WV1.MEAS11
+wv_move_wv_item WV1.MEAS11 958 212
+wv_select_waveview 1 {waveview 1}
+wv_select_wv_item WV1.MEAS11
+wv_drag_item_to WV1 900 221
+wv_move_wv_item WV1.MEAS11 562 291
+wv_select_waveview 1 {waveview 1}
+wv_select_panel WV1.PANEL1:1 2.7027e+08 2.47452e-05
+wv_drag_item_to WV1 560 156
+wv_zoom WV1.PANEL1:1 2.7027e+08 2.47452e-05 4.53527e+08 1.89645e-05
+wv_press_key Ctrl_Z 833 407
+wv_press_tool_button {Custom WaveView} {} {WaveformUndo0} 
+wv_press_tool_button {Custom WaveView} {} {WaveformUndo0} 
+wv_press_tool_button {Custom WaveView} {} {WaveformUndo0} 

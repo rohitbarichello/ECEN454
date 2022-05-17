@@ -1,0 +1,83 @@
+// Generated for: spectre
+// Generated on: Apr 26 14:03:38 2022
+// Design library name: Design
+// Design cell name: flip_flop_simulate
+// Design view name: schematic
+simulator lang=spectre
+global 0 vdd!
+include "/home/ugrads/r/rohitbarichello/cadence/models/spectre/tsmc20N.m"
+include "/home/ugrads/r/rohitbarichello/cadence/models/spectre/tsmc20P.m"
+
+// Library name: Design
+// Cell name: flip_flop
+// View name: schematic
+subckt flip_flop CLK D GND Q VDD _CLK
+    P17 (net39 net38 VDD VDD) tsmc20P w=700n l=200n as=3.5e-13 ad=3.5e-13 \
+        ps=2.4u pd=2.4u m=1 region=sat
+    P16 (net25 CLK net39 VDD) tsmc20P w=700n l=200n as=3.5e-13 ad=3.5e-13 \
+        ps=2.4u pd=2.4u m=1 region=sat
+    P15 (net38 net25 VDD VDD) tsmc20P w=700n l=200n as=3.5e-13 ad=3.5e-13 \
+        ps=2.4u pd=2.4u m=1 region=sat
+    P14 (Q net38 VDD VDD) tsmc20P w=700n l=200n as=3.5e-13 ad=3.5e-13 \
+        ps=2.4u pd=2.4u m=1 region=sat
+    P13 (net25 _CLK net051 VDD) tsmc20P w=700n l=200n as=3.5e-13 \
+        ad=3.5e-13 ps=2.4u pd=2.4u m=1 region=sat
+    P12 (net051 net13 VDD VDD) tsmc20P w=700n l=200n as=3.5e-13 ad=3.5e-13 \
+        ps=2.4u pd=2.4u m=1 region=sat
+    P11 (net19 net051 VDD VDD) tsmc20P w=700n l=200n as=3.5e-13 ad=3.5e-13 \
+        ps=2.4u pd=2.4u m=1 region=sat
+    P10 (net19 _CLK net13 VDD) tsmc20P w=700n l=200n as=3.5e-13 ad=3.5e-13 \
+        ps=2.4u pd=2.4u m=1 region=sat
+    P1 (net11 CLK net13 VDD) tsmc20P w=700n l=200n as=3.5e-13 ad=3.5e-13 \
+        ps=2.4u pd=2.4u m=1 region=sat
+    P0 (net11 D VDD VDD) tsmc20P w=700n l=200n as=3.5e-13 ad=3.5e-13 \
+        ps=2.4u pd=2.4u m=1 region=sat
+    N17 (GND net38 net39 GND) tsmc20N w=300n l=200n as=1.5e-13 ad=1.5e-13 \
+        ps=1.6u pd=1.6u m=1 region=sat
+    N16 (net25 _CLK net39 GND) tsmc20N w=300n l=200n as=1.5e-13 ad=1.5e-13 \
+        ps=1.6u pd=1.6u m=1 region=sat
+    N15 (net38 net25 GND GND) tsmc20N w=300n l=200n as=1.5e-13 ad=1.5e-13 \
+        ps=1.6u pd=1.6u m=1 region=sat
+    N14 (Q net38 GND GND) tsmc20N w=300n l=200n as=1.5e-13 ad=1.5e-13 \
+        ps=1.6u pd=1.6u m=1 region=sat
+    N1 (net11 _CLK net13 GND) tsmc20N w=300n l=200n as=1.5e-13 ad=1.5e-13 \
+        ps=1.6u pd=1.6u m=1 region=sat
+    N0 (net11 D GND GND) tsmc20N w=300n l=200n as=1.5e-13 ad=1.5e-13 \
+        ps=1.6u pd=1.6u m=1 region=sat
+    N13 (net25 CLK net051 GND) tsmc20N w=300n l=200n as=1.5e-13 ad=1.5e-13 \
+        ps=1.6u pd=1.6u m=1 region=sat
+    N12 (net051 net13 GND GND) tsmc20N w=300n l=200n as=1.5e-13 ad=1.5e-13 \
+        ps=1.6u pd=1.6u m=1 region=sat
+    N11 (GND net051 net19 GND) tsmc20N w=300n l=200n as=1.5e-13 ad=1.5e-13 \
+        ps=1.6u pd=1.6u m=1 region=sat
+    N10 (net19 CLK net13 GND) tsmc20N w=300n l=200n as=1.5e-13 ad=1.5e-13 \
+        ps=1.6u pd=1.6u m=1 region=sat
+ends flip_flop
+// End of subcircuit definition.
+
+// Library name: Design
+// Cell name: flip_flop_simulate
+// View name: schematic
+I0 (CLK D 0 Q vdd! _CLK) flip_flop
+V0 (vdd! 0) vsource type=dc dc=1.8
+V3 (_CLK 0) vsource type=pulse dc=1.8 val0=0 val1=1.8 period=12n delay=3n \
+        rise=100p fall=100p width=5n
+V2 (D 0) vsource type=pulse dc=1.8 val0=0 val1=1.8 period=12n delay=3n \
+        rise=100p fall=100p width=5n
+V1 (CLK 0) vsource type=pulse dc=1.8 val0=0 val1=1.8 period=12n delay=3n \
+        rise=100p fall=100p width=5n
+C0 (Q 0) capacitor c=50f m=1
+simulatorOptions options psfversion="1.1.0" reltol=1e-3 vabstol=1e-6 \
+    iabstol=1e-12 temp=27 tnom=27 scalem=1.0 scale=1.0 gmin=1e-12 rforce=1 \
+    maxnotes=5 maxwarns=5 digits=5 cols=80 pivrel=1e-3 \
+    sensfile="../psf/sens.output" checklimitdest=psf 
+tran tran stop=30n write="spectre.ic" writefinal="spectre.fc" \
+    annotate=status maxiters=5 
+finalTimeOP info what=oppoint where=rawfile
+modelParameter info what=models where=rawfile
+element info what=inst where=rawfile
+outputParameter info what=output where=rawfile
+designParamVals info what=parameters where=rawfile
+primitives info what=primitives where=rawfile
+subckts info what=subckts where=rawfile
+saveOptions options save=allpub
